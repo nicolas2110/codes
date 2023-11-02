@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        
+        <div class="est1">
+            codigos javascript
+        </div>
+        
+            <span> 
+                <button>
+                <span >
+                    categorias
+                </span>
+                 </button>
+            </span>
+            <span> 
+                <button>
+                <span >
+                    categorias 2
+                </span>
+              
+                 </button>
+            </span>
+            <span>
+                <button>
+                    xdxd
+                </button>
+            </span>
+            
+            <span>
+                xdxd
+            </span>
+      <script src="editor.js"></script>      
+      <script >
+      let productos=[1];
+  let preciototal=0;
+  let dinero=parseInt(prompt("cuanto dinero tienes ?"))
+  let numproductos=parseInt(prompt("ingrese el numero de productos que desea comprar"))
+  for(let i=1;i<=numproductos;i++)
+  {let precio=parseInt(prompt("ingrese el precio del producto numero "+i))
+    let descuento=parseInt(prompt("ingrese el descuento del producto numero "+i))
+    let preciof=precio-((precio*descuento)/100)
+    productos.push(preciof)
+    alert("el precio del producto numero "+i+" es : "+productos[i])
+    preciototal+=precio; 
+    
+  }
+  alert("el precio total de las compras es de "+preciototal)
+  if(preciototal>dinero)
+  {
+    alert("lo sentimos pero no tienes dinero suficiente")
+  }
+  else
+  {
+    alert("compra exitosa , que disfrutes tus productos")
+  }
+    </script>  
+      
+    </body>
+</html>
